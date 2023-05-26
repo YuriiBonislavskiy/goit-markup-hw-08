@@ -1,0 +1,25 @@
+header {
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+
+.header-box {
+  @extend %container;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  // display: flex;
+  // align-items: center;
+}
+
+.page-logo--feader {
+  z-index: 1;
+}
+
+.page-logo__color--header {
+  @extend .page-logo;
+  color: $menu-item-color;
+}
+

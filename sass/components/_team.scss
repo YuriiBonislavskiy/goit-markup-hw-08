@@ -1,0 +1,126 @@
+.team {
+  @extend %section;
+  background-color: $background-light;
+}
+
+.team__box {
+  @extend %container;
+  text-align: center;
+}
+
+.team__h2 {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize36;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  color: $header-color;
+}
+
+.team__h3 {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-500;
+  font-size: $fontSize16;
+  line-height: 1.173;
+  letter-spacing: 0.03em;
+  padding: 0px;
+  margin: 0px;
+}
+.team__list {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  list-style-type: none;
+}
+
+.team__item {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: calc(100% - 30px);
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - (2 * 30px)) / 2);
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - (4 * 30px)) / 4);
+    margin-bottom: 0px;
+  }
+
+  margin-left: 15px;
+  margin-right: 15px;
+
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.team__image {
+  display: block;
+  width: 100%;
+}
+
+.team__person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 30px;
+  width: 100%;
+  background-color: $base-color2;
+  text-align: center;
+}
+
+.team__position {
+  font-size: $fontSize16;
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-400;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color: $base-color;
+}
+.social__list--team {
+  @extend .social__list;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+.social__link--team {
+  background-color: $base-color2;
+  &:hover,
+  &:focus {
+    background-color: $select-color;
+  }
+}
+
+.social__icon--team {
+  fill: $icon-color;
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: $base-color2;
+  }
+}

@@ -1,0 +1,94 @@
+.clients {
+  @extend %section;
+  text-align: center;
+}
+
+.clients__box {
+  @extend %container;
+}
+.clients__h2 {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize36;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  color: $header-color;
+}
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 50px;
+  padding: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.clients__item {
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: calc((100% - (2 * 30px)) / 2);
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - (3 * 30px)) / 3);
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - (6 * 30px)) / 6);
+    margin-bottom: 0px;
+  }
+}
+
+.clients__link {
+  color: $base-color;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  //   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  text-align: center;
+  -webkit-transition: border-color $anime-time $anime-function;
+  transition: border-color $anime-time $anime-function;
+  &:hover,
+  &:focus {
+    border-color: $select-color;
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: $icon-color;
+  -webkit-transition: fill $anime-time $anime-function;
+  transition: fill $anime-time $anime-function;
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $select-color;
+  }
+}

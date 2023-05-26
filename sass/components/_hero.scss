@@ -1,0 +1,121 @@
+.hero {
+  @extend %section;
+  background: $background-dark;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    padding-bottom: 118px;
+    padding-top: 118px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/bg-image-mobile.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-image-mobile.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: url("../images/bg-image-mobile@2x.png");
+      }
+    }
+    max-width: 480px;
+  }
+
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 118px;
+    padding-top: 118px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/bg-image-tablet.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-image-tablet.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: url("../images/bg-image-tablet@2x.png");
+      }
+    }
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("../images/bg-image-desktop.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/bg-image-desktop.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: url("../images/bg-image-desktop@2x.png");
+      }
+    }
+    max-width: 1600px;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__box {
+  @extend %container;
+  color: $base-color2;
+  text-align: center;
+}
+
+.hero__h1 {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-900;
+  @media screen and (max-width: calc($desktop - 1px)) {
+    font-size: $fontSize26;
+    line-height: 1.615;
+    max-width: 360px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: $fontSize44;
+    line-height: 1.364;
+    max-width: 696px;
+    margin-bottom: 40px;
+  }
+
+  letter-spacing: 0.06em;
+  margin: 0px;
+  margin: auto;
+
+}
+
+.hero__button {
+  @extend %blue__button;
+}

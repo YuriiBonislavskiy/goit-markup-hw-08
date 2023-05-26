@@ -1,0 +1,226 @@
+.portfolio {
+  @extend %section;
+}
+
+.filter {
+  @extend %container;
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    margin-bottom: 40px;
+    gap: 8px;
+    row-gap: 15px;
+    justify-content: flex-start;
+  }
+}
+
+.filter__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.filter__button {
+  font-family: Roboto;
+  font-size: $fontSize16;
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  text-align: center;
+  background: $background-light;
+  border: none;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  color: $menu-item-color;
+  -webkit-transition: background-color $anime-time $anime-function,
+    color $anime-time $anime-function,
+    -webkit-box-shadow $anime-time $anime-function;
+  transition: background-color $anime-time $anime-function,
+    color $anime-time $anime-function,
+    -webkit-box-shadow $anime-time $anime-function;
+  transition: background-color $anime-time $anime-function,
+    color $anime-time $anime-function, box-shadow $anime-time $anime-function;
+  transition: background-color $anime-time $anime-function,
+    color $anime-time $anime-function, box-shadow $anime-time $anime-function,
+    -webkit-box-shadow $anime-time $anime-function;
+  &:hover,
+  &:focus {
+    background-color: $select-color;
+    color: $base-color2;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+      0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/*                              Блок ПРОЄКТИ */
+.projects {
+  @extend %container;
+}
+
+.projects__list {
+  /*  margin-left: 215px; */
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  list-style-type: none;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.projects__item {
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: calc(100% - 30px);
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - (2 * 30px)) / 2);
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 1) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - (3 * 30px)) / 3);
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  margin-left: 15px;
+  margin-right: 15px;
+
+  text-decoration: none;
+  color: $background-light;
+  border: 1px solid $projects__item-color;
+  -webkit-transition: -webkit-box-shadow $anime-time $anime-function;
+  transition: -webkit-box-shadow $anime-time $anime-function;
+  transition: box-shadow $anime-time $anime-function;
+  transition: box-shadow $anime-time $anime-function,
+    -webkit-box-shadow $anime-time $anime-function;
+  &:hover,
+  &:focus {
+    /* border: 1px solid #EEEEEE; */
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+      0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+  }
+}
+
+.projects__link {
+  text-decoration: none;
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  height: auto;
+}
+
+.projects__photo {
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__image {
+  display: block;
+  width: 100%;
+}
+
+.projects__overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: opacity $anime-time $anime-function,
+    -webkit-transform $anime-time $anime-function;
+  transition: opacity $anime-time $anime-function,
+    -webkit-transform $anime-time $anime-function;
+  transition: transform $anime-time $anime-function,
+    opacity $anime-time $anime-function;
+  transition: transform $anime-time $anime-function,
+    opacity $anime-time $anime-function,
+    -webkit-transform $anime-time $anime-function;
+  .projects__item:hover &,
+  .projects__item:focus & {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+.projects__description {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-400;
+  font-size: $fontSize18;
+  line-height: 1.556;
+  text-align: left;
+  color: $base-color2;
+  padding: 0px;
+  margin: 0px;
+}
+
+.projects__id {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  // border-left: 1px solid $projects__item-color;
+  // border-right: 1px solid $projects__item-color;
+  // border-bottom: 1px solid $projects__item-color;
+}
+
+.projects__h3 {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize18;
+  line-height: 2;
+  color: $menu-item-color;
+  letter-spacing: 0.06em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.projects__type {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-400;
+  font-size: $fontSize16;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: $base-color;
+  margin: 0px;
+  margin-top: 4px;
+}

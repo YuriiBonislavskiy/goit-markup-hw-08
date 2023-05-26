@@ -1,0 +1,65 @@
+.activity {
+  @extend %section;  
+  @media screen and (max-width: calc($desktop - 1px)) {
+  display: none;
+  padding-top: 0px;
+  }
+}
+
+.activity__box {
+  @extend %container;
+  text-align: center;
+}
+
+.activity__h2 {
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-700;
+  font-size: $fontSize36;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: $header-color;
+}
+
+.activity__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  //   flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.activity_item {
+  margin-right: 30px;
+  position: relative;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.activity__legend {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 27px 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity__text {
+  font-size: $fontSize14;
+  font-family: $fontFamilyDefault;
+  font-weight: $fontWeight-700;
+  line-height: 1.143;
+  padding: 0px;
+  margin: 0px;
+  color: $base-color2;
+}
+
+.activity__image {
+  display: block;
+}
