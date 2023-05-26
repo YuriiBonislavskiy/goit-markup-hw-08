@@ -1,7 +1,6 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  const mobileMenuFix = document.querySelector("[data-fixed]");
 
   menuBtnRef.addEventListener("click", () => {
     const expanded =
@@ -12,6 +11,5 @@
 
     document.body.classList.toggle("modal-open");
     mobileMenuRef.classList.toggle("is-open");
-    mobileMenuFix.classList.toggle("is-fixed");
-  });
+    });
 })();

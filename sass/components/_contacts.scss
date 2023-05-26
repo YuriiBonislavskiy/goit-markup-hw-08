@@ -96,14 +96,14 @@
 }
 
 .contacts__link--phone {
-  @media screen and (max-width: calc($mobile - 1px)) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     font-size: $fontSize34;
     color: $select-color;
   }
 }
 
 .contacts__link--mail {
-  @media screen and (max-width: calc($mobile - 1px)) {
+  @media screen and (max-width: calc($tablet- 1px)) {
     font-size: $fontSize24;
     margin-top: 32px;
   }
