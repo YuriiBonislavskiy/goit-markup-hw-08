@@ -1,20 +1,28 @@
 .menu__button {
+  align-self: flex-end;
   display: inline-flex;
   margin-left: auto;
+  margin-right: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 10;
 
   @media screen and (min-width: $tablet) {
     display: none;
   }
-
-    &:hover,
-    &:focus {
-    cursor: pointer;
+  &.is-open {
+    z-index: 10;
   }
 
+  &.is-hidden {
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .menu__button.is-open .page-logo--feader {
@@ -22,14 +30,13 @@
 }
 
 .menu__icon--mobile {
-  transition: fill $anime-time $anime-function;  
+  transition: fill $anime-time $anime-function;
   .menu__button:hover &,
   .menu__button:focus &,
   &:hover {
     fill: $select-color;
     cursor: pointer;
   }
-
 }
 
 .menu__button .icon-cross {
@@ -54,15 +61,20 @@
     display: none;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: $mobile;
     padding: 48px 0px 48px 40px;
     text-align: left;
 
     &.is-open {
+      //    @extend %container;
       display: block;
       background-color: $base-color2;
       z-index: 5;
+      .nav {
+        position: fixed;
+      }
     }
   }
 
@@ -72,7 +84,6 @@
     flex-grow: 1;
   }
 }
-
 
 .social-header {
   margin-top: 64px;

@@ -124,7 +124,7 @@
   .contacts__link--header:focus & {
     fill: $select-color;
   }
-  @media screen and (max-width: calc($mobile - 1px)) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     display: none;
   }
 }

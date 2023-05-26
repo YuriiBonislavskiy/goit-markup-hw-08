@@ -1,25 +1,29 @@
 header {
+  @extend %container;
   border-bottom: 1px solid #ececec;
-  position: relative;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: $mobile;
+  }
 }
 
 .header-box {
-  @extend %container;
+  // @extend %container;
+  position: relative;
   @media screen and (max-width: calc($tablet - 1px)) {
+    display: flex;
     padding-top: 16px;
     padding-bottom: 16px;
+    // margin-left: auto;
+    // margin-right: auto;
   }
-
-  // display: flex;
-  // align-items: center;
 }
 
 .page-logo--feader {
-  z-index: 1;
+  z-index: 0;
 }
 
 .page-logo__color--header {
   @extend .page-logo;
   color: $menu-item-color;
 }
-
