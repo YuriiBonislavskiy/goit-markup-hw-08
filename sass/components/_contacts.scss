@@ -103,7 +103,7 @@
 }
 
 .contacts__link--mail {
-  @media screen and (max-width: calc($tablet- 1px)) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     font-size: $fontSize24;
     margin-top: 32px;
   }

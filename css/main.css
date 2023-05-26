@@ -409,14 +409,14 @@ body.modal-open {
   color: #2196f3;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .contacts__link--phone {
     font-size: 34px;
     color: #2196f3;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .contacts__link--mail {
     font-size: 24px;
     margin-top: 32px;
@@ -1403,6 +1403,7 @@ footer {
   padding: 0px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .projects__image {
@@ -1445,7 +1446,16 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
-  padding-right: 24px;
+}
+@media screen and (max-width: 1199px) {
+  .projects__id {
+    padding-right: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__id {
+    padding-right: 20px;
+  }
 }
 
 .projects__h3 {
