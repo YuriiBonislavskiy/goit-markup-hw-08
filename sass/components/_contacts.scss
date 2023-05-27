@@ -25,10 +25,10 @@
 }
 
 .contacts {
-  @media screen and (max-width: calc($desktop - 1px)) {
+  @media screen and (max-width: calc($tablet - 1px)) {
     margin-top: 302px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     margin-top: 0px;
     margin-left: auto;
   }
@@ -42,20 +42,35 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  @media screen and (max-width: calc($desktop - 1px)) {
+
+  @media screen and (max-width: calc($tablet - 1px)) {
     flex-direction: column;
-    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
+    flex-direction: column;
+    // flex-direction: column-reverse;
     padding-top: 21px;
     padding-bottom: 21px;
   }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row-reverse;
+  }
+
 }
 
 .contacts__item--header {
   @extend .contacts__item;
+  @media screen and (min-width: $mobile) and (max-width: calc($desktop - 1px)) {
+    &:first-child {
+      margin-top: 8px;
+    }
+  }
 
   @media screen and (min-width: $desktop) {
     margin-right: 40px;
-    &:last-child {
+    &:first-child {
       margin-right: 0px;
     }
   }
@@ -66,15 +81,12 @@
 
   @media screen and (min-width: $tablet) {
     font-size: $fontSize12;
-    // .contacts__item--header:first-child & {
-    //   margin-bottom: 8px;
-    // }
   }
 
   @media screen and (min-width: $desktop) {
-  //   .contacts__item--header:first-child & {
-  //     margin-bottom: 0px;
-  //   }
+    //   .contacts__item--header:first-child & {
+    //     margin-bottom: 0px;
+    //   }
 
     font-size: $fontSize14;
     padding-top: 32px;
@@ -108,12 +120,12 @@
     margin-top: 32px;
   }
   @media screen and (min-width: $tablet) {
-      margin-top: 10px;
+    margin-top: 10px;
   }
 
   @media screen and (min-width: $desktop) {
-        margin-top: 0px;
-      }
+    margin-top: 0px;
+  }
 }
 
 .contacts__icon--header {
@@ -140,7 +152,6 @@
   }
 }
 .contacts__icon--phone {
-
   @media screen and (min-width: $tablet) {
     width: 10px;
     height: 14px;
