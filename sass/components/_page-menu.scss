@@ -2,7 +2,8 @@
   align-self: flex-end;
   display: inline-flex;
   margin-left: auto;
-  margin-right: 15px;
+
+  // margin-right: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -63,10 +64,13 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: $mobile;
+    width: 100%;
+    height: 100%;
     padding: 48px 0px 48px 40px;
     text-align: left;
-
+  @media screen and (max-width: calc($mobile - 1px)) {
+    overflow-x: scroll;
+  }
     &.is-open {
       //    @extend %container;
       display: block;

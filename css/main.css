@@ -72,7 +72,6 @@ body.modal-open {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: auto;
-  margin-right: 15px;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -131,10 +130,18 @@ body.modal-open {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 480px;
+    width: 100%;
+    height: 100%;
     padding: 48px 0px 48px 40px;
     text-align: left;
   }
+}
+@media screen and (max-width: 767px) and (max-width: 479px) {
+  .menu-container {
+    overflow-x: scroll;
+  }
+}
+@media screen and (max-width: 767px) {
   .menu-container.is-open {
     display: block;
     background-color: #ffffff;
@@ -535,6 +542,7 @@ header {
 
 .hero {
   background: #2f303a;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
@@ -546,7 +554,7 @@ header {
     padding-top: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-mobile.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-mobile.jpg");
-    max-width: 100%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -555,7 +563,7 @@ header {
     padding-top: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-tablet.jpg");
-    max-width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -565,6 +573,7 @@ header {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-desktop.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-desktop.jpg");
     max-width: 1600px;
+    height: 100%;
   }
 }
 
@@ -665,6 +674,11 @@ header {
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (max-width: 767px) {
+  .services__h3 {
+    text-align: center;
+  }
+}
 
 .services__text {
   font-family: "Roboto", sans-serif;
@@ -695,10 +709,12 @@ header {
   height: 70px;
 }
 
+.activity {
+  padding-top: 0px;
+}
 @media screen and (max-width: 1199px) {
   .activity {
     display: none;
-    padding-top: 0px;
   }
 }
 
@@ -1089,6 +1105,7 @@ footer {
 @media screen and (min-width: 1200px) {
   .connect {
     margin-left: 70px;
+    text-align: left;
   }
 }
 

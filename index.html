@@ -155,26 +155,21 @@
                 <h2 class="activity__h2">Чим ми займаємось</h2>
                 <ul class="activity__list">
                     <li class="activity_item">
-                        <img srcset="./images/activity1.jpg  370w, ./images/activity1@2x.jpg 740w, ./images/activity1@3x.jpg 1110w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                        <img srcset="./images/activity1.jpg  1x, ./images/activity1@2x.jpg 2x"
                             src="./images/activity1.jpg" class="activity__image" alt="Десктопні додатки" width="370">
                         <div class="activity__legend">
                             <p class="activity__text">ДЕСКТОПНІ ДОДАТКИ</p>
                         </div>
                     </li>
                     <li class="activity_item">
-                        <img class="activity__image"
-                            srcset="./images/activity2.jpg  370w, ./images/activity2@2x.jpg 740w, ./images/activity2@3x.jpg 1110w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                        <img class="activity__image" srcset="./images/activity2.jpg  1x, ./images/activity2@2x.jpg 2x"
                             src="./images/activity2.jpg" alt="Мобільні додатки" width="370">
                         <div class="activity__legend">
                             <p class="activity__text">МОБІЛЬНІ ДОДАТКИ</p>
                         </div>
                     </li>
                     <li class="activity_item">
-                        <img class="activity__image"
-                            srcset="./images/activity3.jpg  370w, ./images/activity3@2x.jpg 740w, ./images/activity3@3x.jpg 1110w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                        <img class="activity__image" srcset="./images/activity3.jpg  1x, ./images/activity3@2x.jpg 2x"
                             src="./images/activity3.jpg" alt="Дизайнерські рішення" width="370">
                         <div class="activity__legend">
                             <p class="activity__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
@@ -189,10 +184,15 @@
                 <h2 class="team__h2">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img class="team__image"
-                            srcset="./images/team1.jpg 450w, ./images/team1@2x.jpg 900w, ./images/team1@3x.jpg 1350w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/team1.jpg"
-                            alt="Prodoct Designer">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team450-1.jpg 1x, ./images/team450-1@2x.jpg 2x" type="image/jpeg">
+                            <source media="(min-width: 768px)  and (max-width: 1199px)"
+                                srcset="./images/team354-1.jpg 1x, ./images/team354-1@2x.jpg 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team270-1.jpg 1x, ./images/team270-1@2x.jpg 2x" type="image/jpeg">
+                            <img src="./images/team450-1.jpg" alt="Prodoct Designer" style="width:auto;">
+                        </picture>
                         <div class="team__person">
                             <h3 class="team__h3">Ігор Дем'яненко</h3>
                             <p class="team__position">Prodoct Designer</p>
@@ -229,10 +229,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__image"
-                            srcset="./images/team2.jpg 450w, ./images/team2@2x.jpg 900w, ./images/team2@3x.jpg 1350w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/team2.jpg"
-                            alt="Frontend Developer">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team450-2.jpg 1x, ./images/team450-2@2x.jpg 2x" type="image/jpeg">
+                            <source media="(min-width: 768px)  and (max-width: 1199px)"
+                                srcset="./images/team354-2.jpg 1x, ./images/team354-2@2x.jpg 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team270-2.jpg 1x, ./images/team270-2@2x.jpg 2x" type="image/jpeg">
+                            <img src="./images/team450-2.jpg" style="width:auto;" alt="Frontend Developer">
+                        </picture>
                         <div class="team__person">
                             <h3 class="team__h3">Ольга Рєпіна</h3>
                             <p class="team__position">Frontend Developer</p>
@@ -269,10 +274,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__image"
-                            srcset="./images/team3.jpg 450w, ./images/team3@2x.jpg 900w, ./images/team3@3x.jpg 1350w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/team3.jpg"
-                            alt="Marketing">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team450-3.jpg 1x, ./images/team450-3@2x.jpg 2x" type="image/jpeg">
+                            <source media="(min-width: 768px)  and (max-width: 1199px)"
+                                srcset="./images/team354-3.jpg 1x, ./images/team354-3@2x.jpg 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team270-3.jpg 1x, ./images/team270-3@2x.jpg 2x" type="image/jpeg">
+                            <img src="./images/team450-3.jpg" style="width:auto;" alt="Marketing">
+                        </picture>
                         <div class="team__person">
                             <h3 class="team__h3">Микола Тарасов</h3>
                             <p class="team__position">Marketing</p>
@@ -309,10 +319,15 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="team__image"
-                            srcset="./images/team4.jpg 450w, ./images/team4@2x.jpg 900w, ./images/team4@3x.jpg 1350w"
-                            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/team4.jpg"
-                            alt="UI Designer">
+                        <picture>
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team450-4.jpg 1x, ./images/team450-4@2x.jpg 2x" type="image/jpeg">
+                            <source media="(min-width: 768px)  and (max-width: 1199px)"
+                                srcset="./images/team354-4.jpg 1x, ./images/team354-4@2x.jpg 2x">
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team270-4.jpg 1x, ./images/team270-4@2x.jpg 2x" type="image/jpeg">
+                            <img src="./images/team450-4.jpg" style="width:auto;" alt="UI Designer">
+                        </picture>
                         <div class="team__person">
                             <h3 class="team__h3">Михайло Єрмаков</h3>
                             <p class="team__position">UI Designer</p>

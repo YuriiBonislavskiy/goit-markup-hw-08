@@ -1,8 +1,8 @@
 .activity {
   @extend %section;  
+  padding-top: 0px; 
   @media screen and (max-width: calc($desktop - 1px)) {
   display: none;
-  padding-top: 0px;
   }
 }
 

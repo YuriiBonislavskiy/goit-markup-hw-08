@@ -117,32 +117,42 @@
         <ul class="projects__list">
           <li class="projects__item">
             <a class="projects__link" href="">
-              <!-- ВАРІАНТ 1 -->
+
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio1.jpg 450w, ./images/portfolio1@2x.jpg 900w, ./images/portfolio1@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio1.jpg"
-                  alt="Технокряк">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-1.jpg 1x, ./images/portfolio450-1@2x.jpg 2x" type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)" srcset="./images/portfolio354-1.jpg 1x, ./images/portfolio354-1@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-1.jpg 1x, ./images/portfolio370-1@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-1.jpg" style="width:auto;"  alt="Технокряк" >
+                </picture>
+
                 <div class="projects__overlay">
                   <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
                     сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу
                   </p>
                 </div>
               </div>
-              <!-- ВАРІАНТ 1 -->
+
               <div class="projects__id">
                 <h3 class="projects__h3">Технокряк</h3>
                 <p class="projects__type">Веб-сайт</p>
               </div>
             </a>
           </li>
+
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio2.jpg 450w, ./images/portfolio2@2x.jpg 900w, ./images/portfolio2@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio2.jpg"
-                  alt="Постер New Orlean vs Golden Star">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-2.jpg 1x, ./images/portfolio450-2@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-2.jpg 1x, ./images/portfolio354-2@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-2.jpg 1x, ./images/portfolio370-2@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-2.jpg" style="width:auto;" alt="Постер New Orlean vs Golden Star">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -157,10 +167,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio3.jpg 450w, ./images/portfolio3@2x.jpg 900w, ./images/portfolio3@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio3.jpg"
-                  alt="Ресторан Seafood">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-3.jpg 1x, ./images/portfolio450-3@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-3.jpg 1x, ./images/portfolio354-3@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-3.jpg 1x, ./images/portfolio370-3@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-3.jpg" style="width:auto;" alt="Ресторан Seafood">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -176,10 +191,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio4.jpg 450w, ./images/portfolio4@2x.jpg 900w, ./images/portfolio4@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio4.jpg"
-                  alt="Проєкт Prime">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-4.jpg 1x, ./images/portfolio450-4@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-4.jpg 1x, ./images/portfolio354-4@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-4.jpg 1x, ./images/portfolio370-4@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-4.jpg" style="width:auto;"  alt="Проєкт Prime">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -194,10 +214,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio5.jpg 450w, ./images/portfolio5@2x.jpg 900w, ./images/portfolio5@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio5.jpg"
-                  alt="Проєкт Boxes">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-5.jpg 1x, ./images/portfolio450-5@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-5.jpg 1x, ./images/portfolio354-5@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-5.jpg 1x, ./images/portfolio370-5@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-5.jpg" style="width:auto;" alt="Проєкт Boxes">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -212,10 +237,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio6.jpg 450w, ./images/portfolio6@2x.jpg 900w, ./images/portfolio6@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio6.jpg"
-                  alt="Inspiration has no Borders">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-6.jpg 1x, ./images/portfolio450-6@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-6.jpg 1x, ./images/portfolio354-6@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-6.jpg 1x, ./images/portfolio370-6@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-6.jpg" style="width:auto;" alt="Inspiration has no Borders">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -230,10 +260,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio7.jpg 450w, ./images/portfolio7@2x.jpg 900w, ./images/portfolio7@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio7.jpg"
-                  alt="Видання Limited Edition">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-7.jpg 1x, ./images/portfolio450-7@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-7.jpg 1x, ./images/portfolio354-7@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-7.jpg 1x, ./images/portfolio370-7@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-7.jpg" style="width:auto;" alt="Видання Limited Edition">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -250,10 +285,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio8.jpg 450w, ./images/portfolio8@2x.jpg 900w, ./images/portfolio8@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio8.jpg"
-                  alt="Проєкт LAB">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-8.jpg 1x, ./images/portfolio450-8@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-8.jpg 1x, ./images/portfolio354-8@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-8.jpg 1x, ./images/portfolio370-8@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-8.jpg" style="width:auto;" alt="Проєкт LAB">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
@@ -268,10 +308,15 @@
           <li class="projects__item">
             <a class="projects__link" href="">
               <div class="projects__photo">
-                <img class="projects__image"
-                  srcset="./images/portfolio9.jpg 450w, ./images/portfolio9@2x.jpg 900w, ./images/portfolio9@3x.jpg 1350w"
-                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" src="./images/portfolio9.jpg"
-                  alt="Growing Business">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/portfolio450-9.jpg 1x, ./images/portfolio450-9@2x.jpg 2x"
+                    type="image/jpeg">
+                  <source media="(min-width: 768px)  and (max-width: 1199px)"
+                    srcset="./images/portfolio354-9.jpg 1x, ./images/portfolio354-9@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="./images/portfolio370-9.jpg 1x, ./images/portfolio370-9@2x.jpg 2x"
+                    type="image/jpeg">
+                  <img src="./images/portfolio450-9.jpg" style="width:auto;" alt="Growing Business">
+                </picture>
                 <div class="projects__overlay">
                   <p class="projects__description">Тут має бути відповідний текст, що присвячений даному проекту.
                   </p>
