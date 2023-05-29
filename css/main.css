@@ -552,8 +552,9 @@ header {
   .hero {
     padding-bottom: 118px;
     padding-top: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-mobile.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-mobile.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/bg-image-mobile.jpg") 1x, url("../images/bg-image-mobile@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/bg-image-mobile.jpg") 1x, url("../images/bg-image-mobile@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/bg-image-mobile.jpg") 1x, url("../images/bg-image-mobile@2x.jpg") 2x);
     width: 100%;
   }
 }
@@ -561,8 +562,9 @@ header {
   .hero {
     padding-bottom: 118px;
     padding-top: 118px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-tablet.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-tablet.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/bg-image-tablet.jpg") 1x, url("../images/bg-image-tablet@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/bg-image-tablet.jpg") 1x, url("../images/bg-image-tablet@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/bg-image-tablet.jpg") 1x, url("../images/bg-image-tablet@2x.jpg") 2x);
     width: 100%;
   }
 }
@@ -570,28 +572,14 @@ header {
   .hero {
     padding-bottom: 200px;
     padding-top: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/bg-image-desktop.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg-image-desktop.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/bg-image-desktop.jpg") 1x, url("../images/bg-image-desktop@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/bg-image-desktop.jpg") 1x, url("../images/bg-image-desktop@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/bg-image-desktop.jpg") 1x, url("../images/bg-image-desktop@2x.jpg") 2x);
     max-width: 1600px;
     height: 100%;
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .box {
-    background-image: url("../images/bg-image-mobile@2x.png");
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .box {
-    background-image: url("../images/bg-image-tablet@2x.png");
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .box {
-    background-image: url("../images/bg-image-desktop@2x.png");
-  }
-}
 .hero__box {
   color: #ffffff;
   text-align: center;
