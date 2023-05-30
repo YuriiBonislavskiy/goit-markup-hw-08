@@ -16,7 +16,7 @@ footer {
     flex-direction: column;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     flex-wrap: wrap;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
@@ -93,7 +93,7 @@ footer {
     margin-top: 60px;
     text-align: center;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     margin-left: 165px;
     text-align: center;
   }
@@ -209,7 +209,7 @@ footer {
     margin-right: 0px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     width: 450px;
     margin-right: 0px;
   }

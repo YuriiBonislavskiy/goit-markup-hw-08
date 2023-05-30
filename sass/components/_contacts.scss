@@ -79,7 +79,7 @@
 .contacts__link--header {
   @extend .contacts__link;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     font-size: $fontSize12;
   }
 
@@ -119,7 +119,7 @@
     font-size: $fontSize24;
     margin-top: 32px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     margin-top: 10px;
   }
 
@@ -142,7 +142,7 @@
 }
 
 .contacts__icon--mail {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     width: 14px;
     height: 10px;
   }
@@ -152,7 +152,7 @@
   }
 }
 .contacts__icon--phone {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {
     width: 10px;
     height: 14px;
   }
