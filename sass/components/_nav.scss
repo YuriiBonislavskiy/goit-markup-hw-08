@@ -2,11 +2,14 @@
     @extend %container;
   display: flex;
   align-items: center;
-  justify-content: center;
-  // @media screen and (max-width: calc($tablet - 1px)) {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
+  // justify-content: center;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    // margin-left: auto;
+    // margin-right: auto;
+    width: 100%;
+    max-width: $mobile;
+    min-width: $min-mobile;
+  }
   &.is-fixed {
     position: fixed;
   }

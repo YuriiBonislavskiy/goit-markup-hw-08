@@ -3,6 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
+  @media screen and (max-width: calc($min-mobile + 30px)) {
+    min-width: calc($min-mobile + 30px);
+  }
+
+  // @media screen and (min-width: calc($min-mobile + 30px)) {
+  //   min-width: calc($min-mobile + 30px);
+  // }
+
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   // background-color: gray;
@@ -24,15 +32,23 @@
 
 .modal {
   position: absolute;
-  top: calc(50% - $modal__height / 2);
-  left: calc(50% - $modal__width / 2);
-  width: $modal__width;
+    // @media screen and (max-width: calc($min-mobile + 30px)) {
+    //   top: calc(50% - $min-mobile / 2);
+    //   left: calc(50% - $min-mobile / 2);
+    //   width: calc($min-mobile + 30px);
+    // }
+
   @media screen and (max-width: calc($tablet - 1px)) {
-    width: calc(100% - 30px);
     top: calc(50% - $modal__height / 2);
-    left: calc(50% );
+    left: calc(50%);
     transform: translateX(calc(-50%));
-    max-width: $mobile;
+    width: calc(100% - 30px);
+    max-width: $modal__width--mobile;
+         min-width: calc($min-mobile + 30px)
+
+    // @media screen and (min-width: calc($min-mobile + 30px)) {
+    //   min-width: calc($min-mobile + 30px);
+    // }
   }
 
   @media screen and (min-width: $tablet) {
@@ -54,7 +70,10 @@
   transition: opacity $anime-time $anime-function,
     scale $anime-time $anime-function;
   scale: 1;
-  padding: 40px 40px 40px 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
   z-index: 999;
 
@@ -290,7 +309,10 @@
 .modal__button {
   @extend %blue__button;
   margin-top: 30px;
-  padding: 10px 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  padding-right: 52px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: ox-shadow $anime-time $anime-function;

@@ -29,7 +29,7 @@
   font-size: $fontSize14;
   line-height: 1.714;
   @media screen and (max-width: calc($tablet - 1px)) {
-    width: 100%;
+    max-width: $mobile;
     margin-bottom: 30px;
     align-items: center;
     justify-content: center;

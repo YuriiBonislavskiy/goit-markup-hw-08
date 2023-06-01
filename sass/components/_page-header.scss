@@ -3,7 +3,7 @@ header {
   border-bottom: 1px solid #ececec;
 
   @media screen and (max-width: calc($tablet - 1px)) {
-    width: $mobile;
+    // width: $mobile;
   }
 }
 
@@ -11,9 +11,14 @@ header {
   // @extend %container;
   position: relative;
   @media screen and (max-width: calc($tablet - 1px)) {
-    display: flex;
+    // display: flex;
+    padding: 0px;
+    margin: 0px;
     padding-top: 16px;
     padding-bottom: 16px;
+        width: 100%;
+    max-width: $mobile;
+    min-width: $min-mobile;
     // margin-left: auto;
     // margin-right: auto;
   }
@@ -26,5 +31,6 @@ header {
 
 .page-logo__color--header {
   @extend .page-logo;
+    // align-self: flex-start;
   color: $menu-item-color;
 }

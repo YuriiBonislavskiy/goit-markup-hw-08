@@ -17,7 +17,7 @@
         url("../images/bg-image-mobile.jpg") 1x,
         url("../images/bg-image-mobile@2x.jpg") 2x
       );
-    width: 480px;
+    width: 100%;
   }
 
   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px))  {

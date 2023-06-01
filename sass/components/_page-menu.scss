@@ -4,6 +4,10 @@
   margin-left: auto;
 
   margin-right: 15px;
+  // position: absolute;
+  // top: 50%;
+  // right: 0px;
+  // transform: translate(-50%, -50%);
   padding: 0;
   border: none;
   background-color: transparent;
@@ -91,6 +95,8 @@
 
 .social-header {
   margin-top: 64px;
+  margin-left: -5px;
+  margin-right: -5px;
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -101,6 +107,8 @@
   margin: 0px;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
+  // justify-content: center;
 }
 
 .social-header__item {
@@ -111,12 +119,12 @@
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 10px;
   padding-right: 10px;
-  &:first-child {
-    padding-left: 0px;
-  }
+  // &:first-child {
+  //   padding-left: 0px;
+  // }
   &:last-child {
     border: none;
-    padding-right: 0px;
+    // padding-right: 0px;
   }
 }
 

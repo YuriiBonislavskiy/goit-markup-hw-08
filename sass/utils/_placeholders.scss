@@ -1,14 +1,16 @@
 %section {
   padding-top: 94px;
   padding-bottom: 94px;
-  min-width: $mobile;
+  // width: 100%;
+  min-width: calc($min-mobile + 30px);
 }
 
 %container {
-  min-width: $mobile;
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-    // min-width: $mobile;
+  // min-width: $mobile;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    width: 100%;
+    min-width: calc($min-mobile + 30px);
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {

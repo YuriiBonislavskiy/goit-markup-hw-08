@@ -18,19 +18,20 @@ body.modal-open {
 .portfolio, .clients, .team, .activity, .services, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
-  min-width: 480px;
+  min-width: 280px;
 }
 
 .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header, .nav {
-  min-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header, .nav {
-    width: 480px;
+    width: 100%;
+    min-width: 280px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -168,6 +169,8 @@ body.modal-open {
 
 .social-header {
   margin-top: 64px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 @media screen and (min-width: 768px) {
   .social-header {
@@ -182,6 +185,8 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .social-header__item {
@@ -193,12 +198,8 @@ body.modal-open {
   padding-left: 10px;
   padding-right: 10px;
 }
-.social-header__item:first-child {
-  padding-left: 0px;
-}
 .social-header__item:last-child {
   border: none;
-  padding-right: 0px;
 }
 
 .social-header__link {
@@ -213,9 +214,13 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    width: 100%;
+    max-width: 480px;
+    min-width: 250px;
+  }
 }
 .nav.is-fixed {
   position: fixed;
@@ -514,22 +519,18 @@ body.modal-open {
 header {
   border-bottom: 1px solid #ececec;
 }
-@media screen and (max-width: 767px) {
-  header {
-    width: 480px;
-  }
-}
-
 .header-box {
   position: relative;
 }
 @media screen and (max-width: 767px) {
   .header-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding: 0px;
+    margin: 0px;
     padding-top: 16px;
     padding-bottom: 16px;
+    width: 100%;
+    max-width: 480px;
+    min-width: 250px;
   }
 }
 
@@ -556,7 +557,7 @@ header {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/bg-image-mobile.jpg") 1x, url("../images/bg-image-mobile@2x.jpg") 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/bg-image-mobile.jpg") 1x, url("../images/bg-image-mobile@2x.jpg") 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/bg-image-mobile.jpg") 1x, url("../images/bg-image-mobile@2x.jpg") 2x);
-    width: 480px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -629,7 +630,7 @@ header {
 }
 @media screen and (max-width: 767px) {
   .services__item {
-    width: 100%;
+    max-width: 480px;
     margin-bottom: 30px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -830,6 +831,7 @@ header {
 }
 @media screen and (max-width: 767px) {
   .team__item {
+    max-width: 480px;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -863,7 +865,8 @@ header {
 
 .team__image {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .team__person {
@@ -1005,7 +1008,7 @@ footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  min-width: 250px;
 }
 
 .basement {
@@ -1466,6 +1469,12 @@ footer {
   width: 100%;
 }
 
+.project__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .projects__overlay {
   position: absolute;
   top: 0px;
@@ -1550,6 +1559,11 @@ footer {
   border-radius: 4px;
   overflow-y: scroll;
 }
+@media screen and (max-width: 280px) {
+  .backdrop {
+    min-width: 280px;
+  }
+}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1558,26 +1572,27 @@ footer {
 
 .modal {
   position: absolute;
-  top: calc(50% - 290.5px);
-  left: calc(50% - 264px);
-  width: 528px;
   opacity: 1;
   background-color: #ffffff;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   scale: 1;
-  padding: 40px 40px 40px 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
   z-index: 999;
 }
 @media screen and (max-width: 767px) {
   .modal {
-    width: calc(100% - 30px);
     top: calc(50% - 290.5px);
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    max-width: 480px;
+    width: calc(100% - 30px);
+    max-width: 450px;
+    min-width: 280px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1814,7 +1829,10 @@ footer {
 
 .modal__button {
   margin-top: 30px;
-  padding: 10px 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  padding-right: 52px;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: ox-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
