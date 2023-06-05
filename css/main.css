@@ -18,29 +18,29 @@ body.modal-open {
 .portfolio, .clients, .team, .activity, .services, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
-  min-width: 280px;
+  min-width: 350px;
 }
 
-.projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header, .nav {
+.projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 767px) {
-  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header, .nav {
+  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header {
     width: 100%;
-    min-width: 280px;
+    min-width: 350px;
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header, .nav {
+  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header, .nav {
+  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header {
     width: 1200px;
   }
 }
@@ -169,6 +169,7 @@ body.modal-open {
 
 .social-header {
   margin-top: 64px;
+  margin-bottom: 48px;
   margin-left: -5px;
   margin-right: -5px;
 }
@@ -219,7 +220,7 @@ body.modal-open {
   .nav {
     width: 100%;
     max-width: 480px;
-    min-width: 250px;
+    min-width: 320px;
   }
 }
 .nav.is-fixed {
@@ -331,6 +332,19 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    position: absolute;
+    bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts {
+    margin-top: 0px;
+    margin-left: auto;
+  }
+}
+
 .contacts__list, .contacts__list--header {
   padding: 0px;
   margin: 0px;
@@ -357,18 +371,6 @@ body.modal-open {
 .contacts__icon, .contacts__icon--header {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (max-width: 767px) {
-  .contacts {
-    margin-top: 302px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .contacts {
-    margin-top: 0px;
-    margin-left: auto;
-  }
 }
 
 .contacts__list--header {
@@ -530,7 +532,7 @@ header {
     padding-bottom: 16px;
     width: 100%;
     max-width: 480px;
-    min-width: 250px;
+    min-width: 320px;
   }
 }
 
@@ -606,8 +608,11 @@ header {
     font-size: 44px;
     line-height: 1.364;
     max-width: 696px;
-    margin-bottom: 40px;
   }
+}
+
+.hero__button {
+  margin-top: 30px;
 }
 
 .services__list {
@@ -1008,7 +1013,7 @@ footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 250px;
+  min-width: 320px;
 }
 
 .basement {
@@ -1407,7 +1412,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .projects__item {
-    width: calc(100% - 30px);
+    width: 100%;
     margin-bottom: 30px;
   }
   .projects__item:last-child {
@@ -1416,7 +1421,7 @@ footer {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     text-decoration: none;
     margin-bottom: 30px;
     margin-right: 30px;
@@ -1484,7 +1489,7 @@ footer {
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
-  transform: translateY(100%);
+  transform: translateY(102%);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1559,9 +1564,9 @@ footer {
   border-radius: 4px;
   overflow-y: scroll;
 }
-@media screen and (max-width: 280px) {
+@media screen and (max-width: 350px) {
   .backdrop {
-    min-width: 280px;
+    min-width: 350px;
   }
 }
 .backdrop.is-hidden {
@@ -1592,7 +1597,7 @@ footer {
             transform: translateX(-50%);
     width: calc(100% - 30px);
     max-width: 450px;
-    min-width: 280px;
+    min-width: 350px;
   }
 }
 @media screen and (min-width: 768px) {

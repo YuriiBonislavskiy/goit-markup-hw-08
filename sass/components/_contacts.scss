@@ -1,4 +1,17 @@
-.contacts__list {
+.contacts {
+  @media screen and (max-width: calc($tablet - 1px)) {
+  position: absolute;
+  bottom: 0px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    margin-top: 0px;
+    margin-left: auto;
+  }
+  // @media screen and (min-width: $desktop) {
+  //   margin-left: auto;
+  // }
+
+}.contacts__list {
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -22,19 +35,6 @@
 .contacts__icon {
   -webkit-transition: fill $anime-time $anime-function;
   transition: fill $anime-time $anime-function;
-}
-
-.contacts {
-  @media screen and (max-width: calc($tablet - 1px)) {
-    margin-top: 302px;
-  }
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    margin-top: 0px;
-    margin-left: auto;
-  }
-  // @media screen and (min-width: $desktop) {
-  //   margin-left: auto;
-  // }
 }
 
 .contacts__list--header {
