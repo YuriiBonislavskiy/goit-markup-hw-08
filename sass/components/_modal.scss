@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   @media screen and (max-width: calc($min-mobile + 30px)) {
-    min-width: calc($min-mobile + 30px);
+    min-width: calc($min-mobile);
   }
 
   // @media screen and (min-width: calc($min-mobile + 30px)) {
@@ -44,11 +44,12 @@
     transform: translateX(calc(-50%));
     width: calc(100% - 30px);
     max-width: $modal__width--mobile;
-         min-width: calc($min-mobile + 30px)
+         min-width: calc($min-mobile - 30px);
 
-    // @media screen and (min-width: calc($min-mobile + 30px)) {
-    //   min-width: calc($min-mobile + 30px);
-    // }
+    @media screen and (max-width: calc($min-mobile + 30px)) {
+      width: calc($min-mobile - 30px);
+      min-width: calc($min-mobile - 30px);
+    }
   }
 
   @media screen and (min-width: $tablet) {

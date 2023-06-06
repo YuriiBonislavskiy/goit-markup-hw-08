@@ -18,6 +18,7 @@
         url("../images/bg-image-mobile@2x.jpg") 2x
       );
     width: 100%;
+    min-width: $min-mobile;
   }
 
   @media screen and (min-width: $tablet) and (max-width: calc($desktop - 1px)) {
@@ -89,6 +90,7 @@
 
 .hero__box {
   @extend %container;
+
   color: $base-color2;
   text-align: center;
 }
@@ -100,6 +102,10 @@
     font-size: $fontSize26;
     line-height: 1.615;
     max-width: 360px;
+        @media screen and (max-width: calc($mobile - 1px)) {
+      font-size: calc(20px + 6 * ((100vw - 320px) / (480 - 320)));
+  }
+
   }
   @media screen and (min-width: $desktop) {
     font-size: $fontSize44;
@@ -114,5 +120,5 @@
 
 .hero__button {
   @extend %blue__button;
-    margin-top: 30px;
+  margin-top: 30px;
 }
