@@ -15,9 +15,20 @@ body.modal-open {
   overflow: hidden;
 }
 
+@media screen and (width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 .portfolio, .clients, .team, .activity, .services, .hero {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 320px) {
+  .portfolio, .clients, .team, .activity, .services, .hero {
+    overflow-x: hidden;
+  }
 }
 
 .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header {
@@ -31,6 +42,11 @@ body.modal-open {
     width: calc(100% - 30px);
     min-width: 320px;
     max-width: 480px;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 320px) {
+  .projects, .filter, .basement, .clients__box, .team__box, .activity__box, .services__box, .hero__box, header {
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) {

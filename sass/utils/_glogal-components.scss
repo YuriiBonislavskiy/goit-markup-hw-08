@@ -13,3 +13,8 @@ html {
 body.modal-open {
   overflow: hidden;
 }
+
+body {
+  @media screen and (width: $min-mobile) {
+    overflow-x: hidden;}
+}

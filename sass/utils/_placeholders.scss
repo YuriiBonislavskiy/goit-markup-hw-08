@@ -3,14 +3,19 @@
   padding-bottom: 94px;
   // width: 100%;
   // min-width: calc($min-mobile + 30px);
+    @media screen and (max-width: $min-mobile) {
+    overflow-x: hidden;}
 }
 
 %container {
   // min-width: $mobile;
+
   @media screen and (max-width: calc($tablet - 1px)) {
     width: calc(100% - 30px);
     min-width: 320px;
     max-width: $mobile;
+      @media screen and (max-width: $min-mobile) {
+    overflow-x: hidden;}
   }
 
   @media screen and (min-width: $tablet) {
