@@ -108,11 +108,11 @@
 }
 
 .contacts__link--phone {
-  color: $select-color;
 
   @media screen and (max-width: calc($tablet - 1px)) {
     font-size: $fontSize34;
-  }
+  color: $select-color;  
+}
   
   @media screen and (max-width: calc($mobile - 1px)) {
       font-size: calc(28px + 6 * ((100vw - 320px) / (480 - 320)));

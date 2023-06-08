@@ -419,12 +419,10 @@ body.modal-open {
   color: #2196f3;
 }
 
-.contacts__link--phone {
-  color: #2196f3;
-}
 @media screen and (max-width: 767px) {
   .contacts__link--phone {
     font-size: 34px;
+    color: #2196f3;
   }
 }
 @media screen and (max-width: 479px) {
